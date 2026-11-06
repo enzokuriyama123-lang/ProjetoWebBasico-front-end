@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mundo Animal – guia com curiosidades sobre animais"
+    />
+    <title>Galeria | Mundo Animal</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🐾%3C/text%3E%3C/svg%3E" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/tema.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">🐾 Mundo Animal</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="animais.html">Animais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tabela.html">Tabela</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="midia.html">Mídia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cuidados.html">Cuidados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="habitats.html">Habitats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favoritos.html">Favoritos</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://pt.wikipedia.org/wiki/Animalia"
+                  target="_blank"
+                  rel="noopener"
+                  >Mais informações ↗</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  id="btnTema"
+                  class="btn btn-sm btn-outline-light ms-lg-2"
+                  type="button"
+                >
+                  🌓 Modo
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container conteudo my-4">
+      <h1>Galeria de animais</h1>
+      <div class="mb-4 d-flex flex-wrap justify-content-center gap-2" id="filtros">
+        <button type="button" class="btn btn-success filtro" data-filtro="todos">Todos</button>
+        <button type="button" class="btn btn-outline-success filtro" data-filtro="leao">Leão</button>
+        <button type="button" class="btn btn-outline-success filtro" data-filtro="elefante">Elefante</button>
+        <button type="button" class="btn btn-outline-success filtro" data-filtro="golfinho">Golfinho</button>
+        <button type="button" class="btn btn-outline-success filtro" data-filtro="aguia">Águia</button>
+        <button type="button" class="btn btn-outline-success filtro" data-filtro="panda">Panda-gigante</button>
+        <button type="button" class="btn btn-outline-success filtro" data-filtro="tartaruga">Tartaruga-marinha</button>
+      </div>
+      <section id="galeria">
+        <figure class="card item-galeria" data-animal="leao">
+          <img class="card-img-top" src="img/leao-1.jpg" alt="Leão – foto 1" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Leão 1</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="leao">
+          <img class="card-img-top" src="img/leao-2.jpeg" alt="Leão – foto 2" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Leão 2</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="leao">
+          <img class="card-img-top" src="img/leao-3.jpeg" alt="Leão – foto 3" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Leão 3</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="elefante">
+          <img class="card-img-top" src="img/elefante-1.jpeg" alt="Elefante – foto 1" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Elefante 1</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="elefante">
+          <img class="card-img-top" src="img/elefante-2.jpeg" alt="Elefante – foto 2" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Elefante 2</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="elefante">
+          <img class="card-img-top" src="img/elefante-3.jpg" alt="Elefante – foto 3" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Elefante 3</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="golfinho">
+          <img class="card-img-top" src="img/golfinho-1.jpeg" alt="Golfinho – foto 1" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Golfinho 1</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="golfinho">
+          <img class="card-img-top" src="img/golfinho-2.jpeg" alt="Golfinho – foto 2" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Golfinho 2</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="golfinho">
+          <img class="card-img-top" src="img/golfinho-3.jpeg" alt="Golfinho – foto 3" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Golfinho 3</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="aguia">
+          <img class="card-img-top" src="img/aguia-1.jpeg" alt="Águia – foto 1" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Águia 1</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="aguia">
+          <img class="card-img-top" src="img/aguia-2.jpeg" alt="Águia – foto 2" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Águia 2</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="aguia">
+          <img class="card-img-top" src="img/aguia-3.jpeg" alt="Águia – foto 3" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Águia 3</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="panda">
+          <img class="card-img-top" src="img/panda-1.jpeg" alt="Panda-gigante – foto 1" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Panda-gigante 1</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="panda">
+          <img class="card-img-top" src="img/panda-2.jpeg" alt="Panda-gigante – foto 2" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Panda-gigante 2</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="panda">
+          <img class="card-img-top" src="img/panda-3.jpeg" alt="Panda-gigante – foto 3" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Panda-gigante 3</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="tartaruga">
+          <img class="card-img-top" src="img/tartaruga-1.jpeg" alt="Tartaruga-marinha – foto 1" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Tartaruga-marinha 1</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="tartaruga">
+          <img class="card-img-top" src="img/tartaruga-2.jpeg" alt="Tartaruga-marinha – foto 2" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Tartaruga-marinha 2</figcaption>
+        </figure>
+        <figure class="card item-galeria" data-animal="tartaruga">
+          <img class="card-img-top" src="img/tartaruga-3.jpeg" alt="Tartaruga-marinha – foto 3" loading="lazy" />
+          <figcaption class="card-body text-center py-2">Tartaruga-marinha 3</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer class="rodape mt-5 py-4 text-center">
+      <div class="container">
+        <p class="mb-1">© 2026 Mundo Animal – Projeto Front-End Web</p>
+        <small>Desenvolvido por Enzo Kuriyama</small>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/galeria.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Patas de animal">
+  <rect width="400" height="300" rx="16" fill="#e8f5e9"/>
+  <g fill="#2e7d32">
+    <g transform="translate(110 150) rotate(-20)">
+      <ellipse cx="0" cy="25" rx="32" ry="26"/>
+      <ellipse cx="-34" cy="-15" rx="13" ry="18"/><ellipse cx="-11" cy="-30" rx="13" ry="18"/>
+      <ellipse cx="13" cy="-30" rx="13" ry="18"/><ellipse cx="36" cy="-15" rx="13" ry="18"/>
+    </g>
+    <g transform="translate(280 130) rotate(15)" opacity=".75">
+      <ellipse cx="0" cy="25" rx="32" ry="26"/>
+      <ellipse cx="-34" cy="-15" rx="13" ry="18"/><ellipse cx="-11" cy="-30" rx="13" ry="18"/>
+      <ellipse cx="13" cy="-30" rx="13" ry="18"/><ellipse cx="36" cy="-15" rx="13" ry="18"/>
+    </g>
+  </g>
+</svg>

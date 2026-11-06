@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mundo Animal – guia com curiosidades sobre animais"
+    />
+    <title>Favoritos | Mundo Animal</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🐾%3C/text%3E%3C/svg%3E" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/tema.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">🐾 Mundo Animal</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="animais.html">Animais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tabela.html">Tabela</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="midia.html">Mídia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cuidados.html">Cuidados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="habitats.html">Habitats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="favoritos.html">Favoritos</a>
+              </li>
+              <li class="nav-item">
+               <a
+                  class="nav-link"
+                  href="https://pt.wikipedia.org/wiki/Animalia"
+                  target="_blank"
+                  rel="noopener"
+                  >Mais informações ↗</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  id="btnTema"
+                  class="btn btn-sm btn-outline-light ms-lg-2"
+                  type="button"
+                >
+                  🌓 Modo
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container conteudo my-4">
+      <h1>Meus animais favoritos</h1>
+      <form id="formFav" class="formulario mb-4">
+        <div class="row g-3 align-items-end">
+          <div class="col-12 col-md-6">
+            <label for="animal" class="form-label">Animal</label>
+            <input
+              type="text"
+              id="animal"
+              class="form-control"
+              placeholder="Ex.: Leão"
+              required
+              minlength="3"
+              pattern="[A-Za-zÀ-ÿ\- ]{3,}"
+              title="Use apenas letras, espaços e hífen (mínimo de 3 caracteres)"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="email" class="form-label">Seu e-mail</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="voce@exemplo.com"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="motivo" class="form-label">Por que é seu favorito?</label>
+            <textarea
+              id="motivo"
+              class="form-control"
+              rows="3"
+              placeholder="Escreva em pelo menos 10 caracteres"
+              required
+              minlength="10"
+            ></textarea>
+          </div>
+          <div class="col-6 col-md-6">
+            <label for="nota" class="form-label">Nota</label>
+            <select id="nota" class="form-select">
+              <option value="5">5 ★</option>
+              <option value="4">4 ★</option>
+              <option value="3">3 ★</option>
+              <option value="2">2 ★</option>
+              <option value="1">1 ★</option>
+            </select>
+          </div>
+          <div class="col-6 col-md-6">
+            <button type="submit" class="btn btn-success w-100">
+              Adicionar
+            </button>
+          </div>
+        </div>
+      </form>
+      <p id="resumo" class="lead"></p>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover tabela-dados align-middle">
+          <thead>
+            <tr>
+              <th>Animal</th>
+              <th>E-mail</th>
+              <th>Motivo</th>
+              <th>Nota</th>
+              <th class="text-end">Ação</th>
+            </tr>
+          </thead>
+          <tbody id="tabFav"></tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="rodape mt-5 py-4 text-center">
+      <div class="container">
+        <p class="mb-1">© 2026 Mundo Animal – Projeto Front-End Web</p>
+        <small>Desenvolvido por Enzo Kuriyama</small>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/favoritos.js"></script>
+  </body>
+</html>
